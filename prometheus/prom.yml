@@ -6,9 +6,9 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  # Ton app NestJS
+  # Ton app NestJS (URL publique)
   - job_name: 'nestjs-olympia'
-    scheme: http
+    scheme: https
     static_configs:
-      - targets: ['kun-nestjs.railway.internal:8000']
+      - targets: ['kun-nestjs-develop.up.railway.app']
     metrics_path: '/internal/metrics'
