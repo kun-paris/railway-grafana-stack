@@ -10,5 +10,5 @@ scrape_configs:
   - job_name: 'nestjs-olympia'
     scheme: http
     static_configs:
-      - targets: ['kun-nestjs.railway.internal:8000']
+      - targets: ['kun-nestjs.railway.internal']
     metrics_path: '/internal/metrics'
